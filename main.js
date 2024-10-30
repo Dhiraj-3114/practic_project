@@ -1,4 +1,4 @@
-let randomNumber = parseInt(Math.random() * 200 + 1);
+let randomNumber = parseInt(Math.random() * 300 + 1);
 
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
@@ -24,7 +24,7 @@ if(playGame) {
 function validGuess(guess) {
     if(isNaN(guess)) alert('Please enter a valid Number');
     else if(guess < 1) alert('Please enter a number more than 0');
-    else if(guess > 200) alert('Please enter a number less than 201');
+    else if(guess > 300) alert('Please enter a number less than 301');
     else
     {
         //prevGuess.push(guess);
@@ -75,7 +75,7 @@ function endGame() {
 function newGame() {
     const newGameButton = document.querySelector('#NewGame');
     newGameButton.addEventListener('click', (e) => {
-        randomNumber = parseInt(Math.random() * 200 + 1);
+        randomNumber = parseInt(Math.random() * 300 + 1);
         //prevGuess = [];
         numGuess = 1;
         guessSlot.innerHTML = '';
